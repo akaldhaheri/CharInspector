@@ -6,33 +6,28 @@ using namespace std;
 int main()
 {
 
-	char character, letter;
-	int upper_case, lower_case;
+	char letter;
 
   cout<<"What character do you want to know about?\n";
-  cin>> character;
+  cin>> letter;
 
 	if(letter>='A' && letter<='Z')
 	{
-		character=upper_case;
 
 	  //when user's entry is between A-Z...
-	  cout<<" is an upper case letter!\n";
-	  cin>> upper_case;
-
+	  cout<<letter<<" is an upper case letter!\n";
 
 	}else if(letter>='a' && letter<='z')
 	{
-		character=lower_case;
 
 	  //when user's entry is between a-z...
-	  cout<<" is a lower case letter!\n";
-	  cin>> lower_case;
+	  cout<<letter<<" is a lower case letter!\n";
+
 	}else
 	{
 
 	  //in all other cases...
-	  cout<<"?! Pssh. What are you talking about?\n";
+	  cout<<letter<<"?! Pssh. What are you talking about?\n";
 	}
 
 
